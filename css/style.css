@@ -50,27 +50,24 @@ img {
 
 body {
   font-family: 'Manrope', sans-serif;
-  background-color: #1c2225;
+  /* background-color: #1c2225; */
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: -0.02em;
   color: #fcf9f9;
-  min-width: 320px;
-  overflow-x: hidden;
 }
 
 /* ==================== COMMON ====================== */
 
 .container {
+  min-width: 320px;
+  max-width: 374.98px;
   padding: 0 20px;
-  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
-  /* display: flex; */
-  /* align-items: center; */
-  /* min-height: 52px; */
   padding-top: 20px;
+  background-color: #1c2225;
 }
 
 .header-container {
@@ -78,6 +75,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 52px;
+  flex: 0 1 100%;
 }
 
 .header-right-block {
@@ -128,4 +126,109 @@ body {
   padding: 0;
   line-height: 0;
   background-color: transparent;
+}
+/* =====  mobile adapt ===== */
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .header-container {
+    flex: none;
+  }
+}
+/* ===== tablet ===== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .header-burger-icon {
+    width: 43px;
+    height: 30px;
+  }
+
+  .header-right-block {
+    gap: 12px;
+  }
+}
+
+/* ===== desktop ===== */
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 22px;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+
+  .header-burger-menu {
+    display: none;
+  }
+
+  .header-menu-general {
+    display: flex;
+  }
+
+  .header-address {
+    display: flex;
+  }
+
+  .header-general-list {
+    display: flex;
+    gap: 25px;
+  }
+
+  .header-general-link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    line-height: 1.28571;
+    text-transform: uppercase;
+    transition: color 250ms ease-in-out;
+  }
+
+  .header-general-link:hover,
+  .header-general-link:focus {
+    color: #ecd979;
+  }
+
+  .header-address {
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 26px;
+    width: 193px;
+    height: 48px;
+    line-height: 1.42857;
+    text-transform: uppercase;
+    transition: border-color 250ms ease-in-out;
+  }
+
+  .header-address:hover,
+  .header-address:focus {
+    border-color: #ecd979;
+  }
+
+  .header-right-block {
+    gap: 20px;
+  }
+  .header-left-block {
+    display: flex;
+    gap: 60px;
+  }
+}
+
+/* ===== desktop 1440===== */
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: 18px;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 0 100px;
+  }
 }
