@@ -50,7 +50,7 @@ img {
 
 body {
   font-family: 'Manrope', sans-serif;
-  /* background-color: #1c2225; */
+  background-color: #1c2225;
   font-weight: 400;
   font-size: 14px;
   color: #fcf9f9;
@@ -67,7 +67,6 @@ body {
 
 .header {
   padding-top: 20px;
-  background-color: #1c2225;
 }
 
 .header-container {
@@ -230,5 +229,191 @@ body {
   .container {
     max-width: 1440px;
     padding: 0 100px;
+  }
+}
+
+/* <!-- ============= Order ============= --> */
+
+.order {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.order-bg-container {
+  height: 500px;
+  margin: 0 auto 80px;
+  background-image: url(../images/order/order-bg-mobile.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .order-bg-container {
+    background-image: url(../images/order/order-bg-mobile@2x.jpg);
+  }
+}
+
+.order-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  color: #ecd979;
+  margin-bottom: 40px;
+}
+
+.order-accent-color {
+  color: #fcf9f9;
+}
+
+.order-field-wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.order-field-wrapper:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.order-form-input {
+  width: 100%;
+  height: 47px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms ease-in-out;
+}
+
+.order-form-input:focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.order-form-message {
+  width: 100%;
+  height: 196px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms ease-in-out;
+}
+
+.order-form-message:focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.order-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.order-form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  width: 145px;
+  height: 49px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms ease-in-out;
+}
+
+.order-form-submit:hover,
+.order-form-submit.focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.order-img-wrapper {
+  display: none;
+}
+
+/* ===== Order mobile adapt ===== */
+@media screen and (min-width: 375px) {
+  .order-bg-container {
+    max-width: 375px;
+  }
+}
+
+/* ===== Order tablet ===== */
+@media screen and (min-width: 768px) {
+  .order {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../images/order/order-element-gray.png);
+    background-repeat: no-repeat;
+    background-size: 323px 484px;
+    background-position: left bottom;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 32px 40px 32px;
+  }
+
+  .order-bg-container {
+    border-radius: 4px;
+    width: 704px;
+    height: 521px;
+    margin: 0 auto 100px;
+    background-image: url(../images/order/order-bg-tablet.jpg);
+  }
+
+  .order-title {
+    font-size: 44px;
+    line-height: 1.32;
+    max-width: 542px;
+  }
+
+  .order-form-wrapper {
+    max-width: 508px;
+  }
+
+  .order-form {
+    margin-bottom: 100px;
+  }
+
+  .order-form-input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .order-form-message {
+    font-size: 14px;
+  }
+  .order-btn {
+    margin: 0;
+  }
+
+  .order-img-wrapper {
+    max-width: 704px;
+  }
+
+  .order-img-wrapper {
+    display: block;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .order-bg-container {
+    background-image: url(../images/order/order-bg-tablet@2x.jpg);
   }
 }

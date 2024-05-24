@@ -41,7 +41,7 @@
                 <a href="#" class="header-general-link">Our Collection</a>
               </li>
               <li class="header-general-item">
-                <a href="#" class="header-general-link">Customer Order</a>
+                <a href="#order" class="header-general-link">Customer Order</a>
               </li>
               <li class="header-general-item">
                 <a href="#" class="header-general-link">Testimonial</a>
@@ -101,5 +101,79 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- ============= Order ============= -->
+      <section class="order">
+        <div class="order-bg-container"></div>
+        <div class="container order-container">
+          <h2 class="order-title" id="order">
+            <span class="order-accent-color">Your order</span> is our priority: Personalized
+            approach and quality of service
+          </h2>
+          <form class="order-form">
+            <div class="order-form-wrapper">
+              <div class="order-field-wrapper">
+                <label class="order-field-label visually-hidden" for="user-name"
+                  >Enter your full name</label
+                >
+                <input
+                  class="order-form-input"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                  title="Viktor"
+                  required
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div class="order-field-wrapper">
+                <label class="order-field-label visually-hidden" for="user-email"
+                  >Enter your email</label
+                >
+                <input
+                  class="order-form-input"
+                  id="user-email"
+                  type="email"
+                  name="user-email"
+                  pattern="ivettafrank@gmail.com"
+                  required
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="order-field-wrapper">
+                <label class="order-field-label visually-hidden" for="user-comment">Comments</label>
+                <textarea
+                  class="order-form-message"
+                  id="user-comment"
+                  name="user-comment"
+                  required
+                  placeholder="Comments"
+                ></textarea>
+              </div>
+              <button class="order-form-submit order-btn" type="submit">
+                Send
+                <svg class="order-submit-icon" width="24" height="16">
+                  <use href="./icons.svg#icon-button-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="order-img-wrapper">
+            <img
+              class="order-content-img"
+              srcset="
+                ./images/order/order-content-tablet.jpg    1x,
+                ./images/order/order-content-tablet@2x.jpg 2x
+              "
+              src="./images/order/order-content-tablet.jpg"
+              alt="gray embroidered shirt with white sleeves and ornaments in black, gray, white and red shades on a girl"
+              width="704"
+              height="521"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
