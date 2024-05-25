@@ -60,10 +60,12 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 374.98px;
+  max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
+
+/* =========== HEADER =========== */
 
 .header {
   padding-top: 20px;
@@ -153,7 +155,7 @@ body {
   }
 }
 
-/* ===== desktop ===== */
+/* ===== desktop 1280===== */
 @media screen and (min-width: 1280px) {
   .header {
     padding-top: 22px;
@@ -431,7 +433,7 @@ body {
   }
 
   .order-container {
-    background-image: url(../images/order/order-element-gray.png);
+    background-image: url(../images/order/order-elements-1280.png);
     background-repeat: no-repeat;
     background-size: 289px 484px;
     background-position: left bottom;
