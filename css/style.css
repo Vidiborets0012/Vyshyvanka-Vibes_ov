@@ -48,6 +48,7 @@ img {
   overflow: hidden;
 }
 
+/* ==================== COMMON ====================== */
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #1c2225;
@@ -56,13 +57,38 @@ body {
   color: #fcf9f9;
 }
 
-/* ==================== COMMON ====================== */
-
 .container {
   min-width: 320px;
   max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 100px;
+  }
 }
 
 /* =========== HEADER =========== */
@@ -130,21 +156,12 @@ body {
 }
 /* =====  mobile adapt ===== */
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
-
   .header-container {
     flex: none;
   }
 }
 /* ===== tablet ===== */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   .header-burger-icon {
     width: 43px;
     height: 30px;
@@ -159,11 +176,6 @@ body {
 @media screen and (min-width: 1280px) {
   .header {
     padding-top: 22px;
-  }
-
-  .container {
-    max-width: 1280px;
-    padding: 0 50px;
   }
 
   .header-burger-menu {
@@ -226,11 +238,6 @@ body {
 @media screen and (min-width: 1440px) {
   .header {
     padding-top: 18px;
-  }
-
-  .container {
-    max-width: 1440px;
-    padding: 0 100px;
   }
 }
 
