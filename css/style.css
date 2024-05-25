@@ -188,6 +188,7 @@ body {
 
   .header-address {
     display: flex;
+    font-style: normal;
   }
 
   .header-general-list {
