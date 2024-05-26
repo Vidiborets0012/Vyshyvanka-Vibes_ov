@@ -302,51 +302,48 @@ body {
   .container {
     max-width: 375px;
   }
+
+  .collection-img-wrapper {
+    display: block;
+  }
 }
 /* ===== tablet ===== */
-@media screen and (min-width: 768px) {
-}
-
-/* ===== desktop 1280===== */
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-
   .collection {
-    padding-top: 18px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .collection-container {
+    background-image: url(../images/collection/bg-tab-collection-elements.png);
+    background-position: 0 220px;
   }
 
   .collection-title {
     font-size: 44px;
     line-height: 1.46;
-    letter-spacing: -0.03em;
-    color: #fcf9f9;
-    text-align: center;
   }
 
   .collection-list {
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    /* display: flex;
+    display: flex;
   flex-direction: column;
-  gap: 20px; */
+  gap: 20px;
   }
 
   .collection-item {
-    width: calc((100% - 20px) / 2);
-    /* display: flex;
+    display: flex;
   flex-direction: column;
-  gap: 18px; */
+  gap: 18px;
   }
+} */
 
-  .collection-item-subtitle {
-    font-size: 18px;
-  }
-}
+/* ===== desktop 1280===== */
 
 /* <!-- ============= Order ============= --> */
 
