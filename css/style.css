@@ -390,9 +390,13 @@ body {
   max-width: 335px;
 }
 
+.about-img-wrapper {
+  max-width: 335px;
+}
+
 .about-img {
   border-radius: 4px;
-  max-width: 375px;
+  width: 335px;
   height: 499px;
   /* right: 0px; */
 }
@@ -407,6 +411,10 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
+    max-width: 375px;
+  }
+
+  .about-img-wrapper {
     max-width: 375px;
   }
 }
@@ -443,12 +451,13 @@ body {
   }
 
   .about-img {
-    max-width: 704px;
+    width: 704px;
     /* height: 545px; */
   }
 
-  .order-img-wrapper {
+  .about-img-wrapper {
     max-width: 704px;
+    padding: 32px;
   }
 
   /* .about-overlay {
