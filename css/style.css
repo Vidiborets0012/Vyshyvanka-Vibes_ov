@@ -345,14 +345,22 @@ body {
 
 /* ===== desktop 1280===== */
 
+/* ============== ABOUT =================== */
+
 .main-about {
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
+  padding-top: 40px;
+  padding-bottom: 62px;
+  background-image: url(../images/about-us/g8uzor-gren.png);
+  background-repeat: no-repeat;
+  background-size: 459px 408px;
+  background-position: left 105px bottom;
 }
 .about-item {
   /*position: relative;
     overflow: hidden;*/
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 .about-title {
   font-weight: 500;
@@ -378,17 +386,27 @@ body {
 
 .about-img {
   border-radius: 4px;
-  width: 335px;
+  max-width: 375px;
   height: 499px;
-  right: 0px;
+  /* right: 0px; */
 }
 
-.about-overlay {
+.order-img-wrapper {
+  max-width: 375px;
+}
+
+/* .about-overlay {
   position: absolute;
   top: 611px;
   left: 105px;
   width: 459px;
   height: 408px;
+} */
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
 }
 
 /*---tablet--*/
@@ -423,12 +441,12 @@ body {
     height: 545px;
   }
 
-  .about-overlay {
+  /* .about-overlay {
     top: 473px;
     left: 367px;
     width: 545px;
     height: 484px;
-  }
+  } */
 }
 
 /*---- desktop 1280----*/
@@ -463,12 +481,12 @@ body {
     height: 545px;
   }
 
-  .about-overlay {
+  /* .about-overlay {
     top: 141px;
     left: 845px;
     width: 545px;
     height: 484px;
-  }
+  } */
 }
 
 /*--- desktop 1440  ---*/
